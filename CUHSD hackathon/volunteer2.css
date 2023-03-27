@@ -1,0 +1,17 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    color: lightcoral;
+    size: 50px;
+    border-color: coral;
+    border-radius: 15; 
+}
+
+#map{
+    height: 80%;
+    width: 90%;
+    margin: auto;
+}

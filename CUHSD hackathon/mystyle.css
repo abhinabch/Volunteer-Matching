@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+  }
+
+  
+  nav {
+    background: #262626;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* added z-index */
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  #section1 {
+    height: 900px;
+    background: pink;
+    background-image: url('path/to/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 60px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+
+  .container {
+    width: 100%;
+    height: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+  }
+  .search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+  }
+  .search-bar input {
+    background:transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding:24px 20px;
+    font-size: 20px;
+    color: #262626;
+  }
+
+  ::placeholder{
+    color: #262626;
+  }
+
+  .search-bar button img{
+    width: 25px;
+  }
+  
+  .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+  }
+
+  #section2 {
+    height: 900px;
+    background: yellow;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  #section3 {
+    height: 900px;
+    background: red;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  #section4 {
+    height: 900px;
+    background: green;
+    display: inline-block;
+    width: 100%;
+  }
+  h1 {
+    margin: 100px;
+    text-align: center;
+    padding: 0;
+  }
+
+
+
+  

@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>NAME OF WEBSITE</title>
+        <!-- Fixed the link to the Font Awesome stylesheet -->
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link id="favicon" rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/css-doodle@2.2.3/dist/css-doodle.min.js"></script>
+    </head>
+    <body>
+        <div id="section1">
+            <h1>Volunteering Opportunities Near Me ↓</h1>
+            <div class="container">
+                <form onsubmit="saveSearch(event)" action="volunteer.html" class="search-bar">
+                    <input id="search-input" type="text" placeholder="search anything" name="q">
+                    <button type="submit"><img src="search.png"></button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            function saveSearch(event) {
+                event.preventDefault(); // prevent the form from submitting
+        
+                const searchInput = document.getElementById("search-input");
+                const searchText = searchInput.value;
+                localStorage.setItem("lastSearch", searchText); // save the search text to local storage
+                event.target.submit(); // submit the form and redirect to volunteer.html
+            }
+        </script>
+        
+        
+
+        <div id="section2">
+            <h1>This is Resources Section</h1>
+        </div>
+        
+        <div id="section3">
+            <h1>This is About Section</h1>
+        </div>
+        
+        <div id="section4">
+            <h1>This is Contact Section</h1>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Type to search..">
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+        <div class="cancel-icon">
+                <i class="fas fa-times"></i>
+            </div>    
+        <div class="search-data">    
+        <nav>
+            <ul>
+               <li><a href="#section1">Home</a></li> 
+               <li><a href="#section2">Resources</a></li> 
+               <li><a href="#section3">About</a></li> 
+               <li><a href="#section4">Contact</a></li> 
+            </ul>  
+        </nav>
+        
+    </body>
+</html>
